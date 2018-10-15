@@ -72,6 +72,14 @@ class Fib extends Component {
       </div>
     );
   }
+
+  // the following was suggested as a temporary fix for not having to hit refresh, but polling every second seems pants
+  // componentDidMount() {
+  //   setInterval(() => {
+  //     this.fetchValues();
+  //     this.fetchIndexes();
+  //   }, 1000);
+  // }
 }
 
 export default Fib;
