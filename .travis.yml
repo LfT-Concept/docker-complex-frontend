@@ -9,7 +9,7 @@ script:
   - docker run lftconcept/react-test npm test -- --coverage
 
 after_success:
-  - docker build -t lftconcept/multi-client ./client
+  - docker build -t lftconcept/multi-client:v2 ./client
   - docker build -t lftconcept/multi-nginx ./nginx
   - docker build -t lftconcept/multi-server ./server
   - docker build -t lftconcept/multi-worker ./worker
